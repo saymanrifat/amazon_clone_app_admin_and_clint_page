@@ -26,20 +26,7 @@ class MyApp extends StatelessWidget {
             color: Colors.black,
           )),
       onGenerateRoute: (settings) => generateRoute(settings),
-      home: Scaffold(
-          appBar: AppBar(
-            title: const Text('Hallo.'),
-          ),
-          body: Column(
-            children: [
-              const Center(child: Text('Home Page')),
-              ElevatedButton(
-                  onPressed: () {
-                    Navigator.pushNamed(context, AuthScreen.routerName);
-                  },
-                  child: const Text('Click'))
-            ],
-          )),
+      home: const AuthScreen(),
     );
   }
 }

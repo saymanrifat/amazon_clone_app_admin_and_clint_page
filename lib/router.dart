@@ -12,7 +12,7 @@ Route<dynamic> generateRoute(RouteSettings routeSettings) {
     default:
       return MaterialPageRoute(
         settings: routeSettings,
-        builder: (_) => Scaffold(
+        builder: (_) => const Scaffold(
           body: Center(
             child: Text('Screen Dose not Exist!'),
           ),
